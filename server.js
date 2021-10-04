@@ -11,11 +11,9 @@ app.use(cors());
 const port = process.env.PORT || 3000;
 
 //routes
-const queueRouteConfig = require('./queue/queue.route');
 const characterRouteConfig = require('./character/character.route');
 
 //use routes
-queueRouteConfig.routesConfig(app)
 characterRouteConfig.routesConfig(app)
 
 app.listen(port, ()=>{
